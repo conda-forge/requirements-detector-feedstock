@@ -11,6 +11,18 @@ Summary: Python tool to find and list requirements of a Python project
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/requirements-detector-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/requirements-detector-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/requirements-detector-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/requirements-detector-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/requirements-detector-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/requirements-detector-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/requirements-detector/badges/version.svg)](https://anaconda.org/conda-forge/requirements-detector)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/requirements-detector/badges/downloads.svg)](https://anaconda.org/conda-forge/requirements-detector)
+
 Installing requirements-detector
 ================================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `requirements-detector` available 
 ```
 conda search requirements-detector --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/requirements-detector-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/requirements-detector-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/requirements-detector-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/requirements-detector-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/requirements-detector-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/requirements-detector-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/requirements-detector/badges/version.svg)](https://anaconda.org/conda-forge/requirements-detector)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/requirements-detector/badges/downloads.svg)](https://anaconda.org/conda-forge/requirements-detector)
 
 
 Updating requirements-detector-feedstock
