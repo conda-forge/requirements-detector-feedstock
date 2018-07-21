@@ -33,7 +33,7 @@ test:
   imports:
     - requirements_detector
   commands:
-    - detect-requirements --help
+    - which detect-requirements
 
 about:
   home: https://github.com/landscapeio/requirements-detector
