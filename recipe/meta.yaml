@@ -15,7 +15,7 @@ build:
   noarch: python
   number: 1
   script: python -m pip install --no-deps --ignore-installed .
-  entrypoints:
+  entry_points:
     - detect-requirements = requirements_detector.run:run
 
 requirements:
