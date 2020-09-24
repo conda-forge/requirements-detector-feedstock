@@ -1,6 +1,6 @@
 {% set name = "requirements-detector" %}
-{% set version = "0.6" %}
-{% set sha256 = "9fbc4b24e8b7c3663aff32e3eba34596848c6b91bd425079b386973bd8d08931" %}
+{% set version = "0.7" %}
+{% set sha256 = "0d1e13e61ed243f9c3c86e6cbb19980bcb3a0e0619cde2ec1f3af70fdbee6f7b" %}
 
 package:
   name: {{ name|lower }}
@@ -12,13 +12,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
