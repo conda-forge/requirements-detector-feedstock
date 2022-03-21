@@ -1,6 +1,6 @@
 {% set name = "requirements-detector" %}
-{% set version = "0.7" %}
-{% set sha256 = "0d1e13e61ed243f9c3c86e6cbb19980bcb3a0e0619cde2ec1f3af70fdbee6f7b" %}
+{% set version = "1.0.2" %}
+{% set sha256 = "98ef5113d991f2aa30b229fe6f63f2878c7e35326e9e21d71ef8113021e2eefa" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
