@@ -25,6 +25,7 @@ requirements:
     - setuptools
     - astroid >=2.0
     - packaging >=21.3
+    - semver
     - toml >=0.10.2
 
 test:
