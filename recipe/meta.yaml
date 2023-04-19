@@ -26,7 +26,6 @@ requirements:
     - astroid >=2.0
     - packaging >=21.3
     - toml >=0.10.2
-    - poetry-semver >=0.1.0
 
 test:
   imports:
