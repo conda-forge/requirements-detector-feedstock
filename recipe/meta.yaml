@@ -12,16 +12,17 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python
+    - python >=3.8
     - pip
     - poetry-core
 
   run:
-    - python
+    - python >=3.8
     - setuptools
     - astroid >=2.0
     - packaging >=21.3
@@ -42,3 +43,4 @@ extra:
   recipe-maintainers:
     - jakirkham
     - valeriupredoi
+    - zklaus
