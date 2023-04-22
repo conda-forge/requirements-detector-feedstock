@@ -144,5 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@jakirkham](https://github.com/jakirkham/)
+* [@valeriupredoi](https://github.com/valeriupredoi/)
 * [@zklaus](https://github.com/zklaus/)
 

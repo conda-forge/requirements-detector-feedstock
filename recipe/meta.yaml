@@ -1,18 +1,17 @@
 {% set name = "requirements-detector" %}
-{% set version = "0.7" %}
-{% set sha256 = "0d1e13e61ed243f9c3c86e6cbb19980bcb3a0e0619cde2ec1f3af70fdbee6f7b" %}
+{% set version = "1.2.1" %}
+{% set sha256 = "3c3f2eaf40f86337b07826be65ee2a413a6337da2484a887523c816a921f04b6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/requirements_detector-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -20,11 +19,15 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - poetry-core
 
   run:
     - python >=3.8
     - setuptools
-    - astroid >=1.4
+    - astroid >=2.0
+    - packaging >=21.3
+    - semver
+    - toml >=0.10.2
 
 test:
   imports:
@@ -39,4 +42,5 @@ about:
 extra:
   recipe-maintainers:
     - jakirkham
+    - valeriupredoi
     - zklaus
