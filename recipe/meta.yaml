@@ -1,6 +1,6 @@
 {% set name = "requirements-detector" %}
-{% set version = "1.2.1" %}
-{% set sha256 = "3c3f2eaf40f86337b07826be65ee2a413a6337da2484a887523c816a921f04b6" %}
+{% set version = "1.2.2" %}
+{% set sha256 = "3642cd7a5b261d79536c36bb7ecacf2adabd902d2e0e42bfb2ba82515da10501" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
