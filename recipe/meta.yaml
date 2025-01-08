@@ -7,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/requirements_detector-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/requirements_detector-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8,<4
+    - python {{ python_min }}
     - pip
     - poetry-core
 
   run:
-    - python >=3.8,<4
+    - python >={{ python_min }},<4
     - setuptools
     - astroid >=3.0
     - packaging >=21.3
@@ -30,6 +30,8 @@ requirements:
     - toml >=0.10.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - requirements_detector
 
