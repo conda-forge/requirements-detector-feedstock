@@ -1,13 +1,13 @@
 {% set name = "requirements-detector" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "0326c39269d87504c0e1b75932b86a6fdaa8a9eb3ce82243e5a21b696c2ade76" %}
+{% set version = "1.6.0" %}
+{% set sha256 = "601a57092f7a25fbbcf0985fbc91f2af64b1f882e951336cd4920ecee8fb03b1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/requirements_detector-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/requirements_detector-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
